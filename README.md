@@ -47,5 +47,16 @@ The learning rate is a key hyperparameter that controls how much the model weigh
 - Too low -> training becomes very slow and may get stuck in local minima.
 
 To find an optimal value, multiple learning rates were tested, and the corresponding cost vs. learning rate was recorded:
+
 <img width="400" height="300" alt="Figure_dev" src="https://github.com/user-attachments/assets/48721ce9-d803-4af5-916b-7658cacd291e" />
 <img width="400" height="300" alt="Figure_train" src="https://github.com/user-attachments/assets/97a36660-1752-48e3-9267-527f9cc9f0ac" />
+
+Learning rates 0.5 and 0.1 resulted in too low cost, signalling overfitting.
+Learning rates 0.001, 0.005 and 0.0075 caused slow learning
+
+Hence, a learning rate of 0.1 was chosen
+
+## Receiver Operating Characteristic (ROC) curve
+<img width="640" height="480" alt="ROC" src="https://github.com/user-attachments/assets/394f9ba6-73f1-40f9-b4bf-175ca08b1c6c" />
+
+
