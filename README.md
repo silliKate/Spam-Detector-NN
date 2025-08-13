@@ -72,6 +72,7 @@ A high AUC ( ~ 0.99 ) demonstrates that the model achieves excellent discriminat
 
 ## Acknowledgements 
 The dataset used in this project was obtained from [Kaggle](https://www.kaggle.com/datasets/uciml/sms-spam-collection-dataset/data). The original dataset can be found on [UCI](https://archive.ics.uci.edu/ml/datasets/SMS+Spam+Collection) 
+
 It is composed of:
 - [Grumbletext website](http://www.grumbletext.co.uk/): 425 manually extracted spam messages from a UK forum where users report SMS spam.
 - [NUS SMS Corpus(NSC)](http://www.comp.nus.edu.sg/~rpnlpir/downloads/corpora/smsCorpus/): 3,375 randomly selected legitimate ham messages out of the 10,000 collected for research at the Department of Computer Science at the National University of Singapore.
