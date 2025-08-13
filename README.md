@@ -57,6 +57,10 @@ Learning rates 0.001, 0.005 and 0.0075 caused slow learning
 Hence, a learning rate of 0.1 was chosen
 
 ## Receiver Operating Characteristic (ROC) curve
+The Receiver Operating Characteristic (ROC) curve is a visual representation of the model’s ability to distinguish between spam and ham messages. It plots the True Positive Rate (TPR) against the False Positive Rate (FPR) at various classification thresholds.
+- The closer the ROC curve is to the top-left corner, the better the model’s classification performance.
+- The Area Under the Curve (AUC) quantifies overall performance: a value closer to 1 indicates a highly accurate model.
+
 <img width="640" height="480" alt="ROC" src="https://github.com/user-attachments/assets/394f9ba6-73f1-40f9-b4bf-175ca08b1c6c" />
 
 
