@@ -37,7 +37,15 @@ Spam messages, whether in emails or SMS, are a common nuisance and can sometimes
    python train.py
    ```
    
-   The script preprocesses the data in spam.csv for training. You can adjust the hyperparameters as needed for experimentation or testing.
-   Note: Running this script will overwrite the existing model_params.npz; the original version is available in the backup/ folder.
+   The script preprocesses the data in spam.csv for training. You can adjust the hyperparameters as needed for experimentation purposes.
+   Note: Running this script will overwrite the existing `model_params.npz`; the original version is available in the `backup/` folder.
    Additionally, the script includes utility functions to monitor the model’s performance, such as tracking various learning rates vs cost during training.
    
+## Learning Rate Analysis
+The learning rate is a key hyperparameter that controls how much the model weights are updated during training. Choosing an appropriate learning rate is crucial:
+- Too high -> model may diverge or oscillate, failing to converge.
+- Too low -> training becomes very slow and may get stuck in local minima.
+
+To find an optimal value, multiple learning rates were tested, and the corresponding cost vs. learning rate was recorded:
+<img width="800" height="600" alt="Figure_dev" src="https://github.com/user-attachments/assets/48721ce9-d803-4af5-916b-7658cacd291e" />
+<img width="800" height="600" alt="Figure_train" src="https://github.com/user-attachments/assets/97a36660-1752-48e3-9267-527f9cc9f0ac" />
