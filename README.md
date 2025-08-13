@@ -47,5 +47,5 @@ The learning rate is a key hyperparameter that controls how much the model weigh
 - Too low -> training becomes very slow and may get stuck in local minima.
 
 To find an optimal value, multiple learning rates were tested, and the corresponding cost vs. learning rate was recorded:
-<img width="800" height="600" alt="Figure_dev" src="https://github.com/user-attachments/assets/48721ce9-d803-4af5-916b-7658cacd291e" />
-<img width="800" height="600" alt="Figure_train" src="https://github.com/user-attachments/assets/97a36660-1752-48e3-9267-527f9cc9f0ac" />
+<img width="400" height="300" alt="Figure_dev" src="https://github.com/user-attachments/assets/48721ce9-d803-4af5-916b-7658cacd291e" />
+<img width="400" height="300" alt="Figure_train" src="https://github.com/user-attachments/assets/97a36660-1752-48e3-9267-527f9cc9f0ac" />
