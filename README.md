@@ -61,7 +61,7 @@ The Receiver Operating Characteristic (ROC) curve is a visual representation of 
 - The closer the ROC curve is to the top-left corner, the better the model’s classification performance.
 - The Area Under the Curve (AUC) quantifies overall performance: a value closer to 1 indicates a highly accurate model.
 
-<img width="320" height="240" display="block" margin="auto" alt="ROC" src="https://github.com/user-attachments/assets/394f9ba6-73f1-40f9-b4bf-175ca08b1c6c" />
+<img width="480" height="360" align="center" alt="ROC" src="https://github.com/user-attachments/assets/394f9ba6-73f1-40f9-b4bf-175ca08b1c6c" />
 
 A high AUC ( ~ 0.99 ) demonstrates that the model achieves excellent discrimination between spam and non-spam messages, confirming its effectiveness.
 
