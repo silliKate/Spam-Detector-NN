@@ -316,7 +316,8 @@ def plot_roc_curve(X, Y):
     AL = np.squeeze(AL)
     fpr, tpr, _ = roc_curve(Y.flatten(), AL)
     roc_auc = auc(fpr, tpr)
-
+    
+    print(f"AUC: {roc_auc:.2f}")
     plt.figure()
     plt.plot(fpr, tpr, color='red', lw=2, label=f'ROC curve (AUC = {roc_auc:.2f})')
     plt.plot([0, 1], [0, 1], color='gray', lw=1, linestyle='--')
@@ -328,4 +329,5 @@ def plot_roc_curve(X, Y):
     plt.show()
 
 plot_roc_curve(X_train, Y_train)
+
 # <-------------------------------------------------------------------------------------------> #
