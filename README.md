@@ -1,5 +1,5 @@
 # Spam-Detector-NN
-A deep neural network designed to classify emails and SMS messages as spam or ham. The current implementation achieves an accuracy of approximately 95.3%.
+A deep neural network designed to classify emails and SMS messages as spam (1) or ham (0). The current implementation achieves an accuracy of approximately 95.3%.
 
 ## Overview
 Spam messages, whether in emails or SMS, are a common nuisance and can sometimes pose security risks. Detecting spam automatically is crucial to improve communication efficiency and protect users from potential threats. This project implements a deep neural network for spam detection, using ReLU activation in hidden layers and a sigmoid function in the output layer for binary classification. Text data is processed using TF-IDF vectorization into numerical values, for effective learning.
@@ -61,6 +61,16 @@ The Receiver Operating Characteristic (ROC) curve is a visual representation of 
 - The closer the ROC curve is to the top-left corner, the better the model’s classification performance.
 - The Area Under the Curve (AUC) quantifies overall performance: a value closer to 1 indicates a highly accurate model.
 
-<img width="640" height="480" alt="ROC" src="https://github.com/user-attachments/assets/394f9ba6-73f1-40f9-b4bf-175ca08b1c6c" />
+<img width="320" height="240" alt="ROC" src="https://github.com/user-attachments/assets/394f9ba6-73f1-40f9-b4bf-175ca08b1c6c" />
+
+A high AUC ( ~ 0.99 ) demonstrates that the model achieves excellent discrimination between spam and non-spam messages, confirming its effectiveness.
+
+## Acknowledgements 
+The dataset used in this project was obtained from [Kaggle](https://www.kaggle.com/datasets/uciml/sms-spam-collection-dataset/data). The original dataset can be found on [UCI](https://archive.ics.uci.edu/ml/datasets/SMS+Spam+Collection) 
+It is composed of:
+- [Grumbletext website](http://www.grumbletext.co.uk/): 425 manually extracted spam messages from a UK forum where users report SMS spam.
+- [NUS SMS Corpus(NSC)](http://www.comp.nus.edu.sg/~rpnlpir/downloads/corpora/smsCorpus/): 3,375 randomly selected legitimate ham messages out of the 10,000 collected for research at the Department of Computer Science at the National University of Singapore.
+- [Caroline Tag’s PhD Thesis](http://etheses.bham.ac.uk/253/1/Tagg09PhD.pdf): A list of 450 SMS ham messages collected from the thesis.
+- [SMS Spam Corpus v0.1 Big](http://www.esp.uem.es/jmgomez/smsspamcorpus/): 1,002 ham messages and 322 spam messages, publicly available.
 
 
