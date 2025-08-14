@@ -16,16 +16,16 @@ def relu(z): return np.maximum(0, z)
 # used to calculate dZ during backpropagation
 def sigmoid_backward(dA, Z): return dA * (sigmoid(Z) * (1 - sigmoid(Z)))
 def relu_backward(dA, Z):
-    dZ = np.array(dA, copy=True) # just copy dA
-    dZ[Z < 0] = 0 # zero out where Z < 0
+    dZ = np.array(dA, copy=True) # make a copy of dA
+    dZ[Z < 0] = 0 # 0 where Z < 0 
     return dZ
 
 
 def preprocess_text(text):
-    # Remove special characters and digits
+    # removes special characters and digits
     text = re.sub(r'[^a-zA-Z\s]', '', text)
 
-    # Convert to lowercase
+    # converts to lowercase
     text = text.lower()
 
     return text
@@ -331,3 +331,4 @@ def plot_roc_curve(X, Y):
 plot_roc_curve(X_train, Y_train)
 
 # <-------------------------------------------------------------------------------------------> #
+
