@@ -70,11 +70,11 @@ The Receiver Operating Characteristic (ROC) curve is a visual representation of 
 A high AUC ( ~ 0.99 ) demonstrates that the model achieves excellent discrimination between spam and non-spam messages, confirming its effectiveness.
 
 ## Acknowledgements 
-The dataset used in this project was obtained from [Kaggle](https://www.kaggle.com/datasets/uciml/sms-spam-collection-dataset/data). The original dataset can be found on [UCI](https://archive.ics.uci.edu/ml/datasets/SMS+Spam+Collection) 
+The dataset used in this project was obtained from [Kaggle](https://www.kaggle.com/datasets/uciml/sms-spam-collection-dataset/data). The original dataset can be found on [UCI](https://archive.ics.uci.edu/ml/datasets/SMS+Spam+Collection). 
 
 It is composed of:
 - [Grumbletext website](http://www.grumbletext.co.uk/): 425 manually extracted spam messages from a UK forum where users report SMS spam.
-- [NUS SMS Corpus(NSC)](http://www.comp.nus.edu.sg/~rpnlpir/downloads/corpora/smsCorpus/): 3,375 randomly selected legitimate ham messages out of the 10,000 collected for research at the Department of Computer Science at the National University of Singapore.
+- [NUS SMS Corpus](http://www.comp.nus.edu.sg/~rpnlpir/downloads/corpora/smsCorpus/): 3,375 randomly selected legitimate ham messages out of the 10,000 collected for research at the Department of Computer Science at the National University of Singapore(NUS).
 - [Caroline Tag’s PhD Thesis](http://etheses.bham.ac.uk/253/1/Tagg09PhD.pdf): A list of 450 SMS ham messages collected from the thesis.
 - [SMS Spam Corpus v0.1 Big](http://www.esp.uem.es/jmgomez/smsspamcorpus/): 1,002 ham messages and 322 spam messages, publicly available.
 
