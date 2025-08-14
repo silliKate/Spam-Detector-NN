@@ -16,7 +16,7 @@ def relu(z): return np.maximum(0, z)
 # used to calculate dZ during backpropagation
 def sigmoid_backward(dA, Z): return dA * (sigmoid(Z) * (1 - sigmoid(Z)))
 def relu_backward(dA, Z):
-    dZ = np.array(dA, copy=True) # make a copy of dA
+    dZ = np.array(dA, copy=True) # makes a copy of dA
     dZ[Z < 0] = 0 # 0 where Z < 0 
     return dZ
 
@@ -263,10 +263,10 @@ n3 = 5 # third hidden layer size
 ny = 1  # output layer size
 layers_dims = [nx, n1, n2, n3, ny]
 
-# main()
+main()
 
 
-# <-------------------------------------------------------------------------------------------> #
+# <--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------> #
 # for plotting & testing purposes
 def dev(X, Y, learning_rate = 0.01, num_iterations = 3000, layers_dims = [7000, 20, 10, 5, 1]):
     parameters, costs = nn_model(X, Y, layers_dims, learning_rate, num_iterations, print_cost = True)
@@ -328,7 +328,7 @@ def plot_roc_curve(X, Y):
     plt.legend(loc="lower right")
     plt.show()
 
-plot_roc_curve(X_train, Y_train)
+# plot_roc_curve(X_train, Y_train)
+# <--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------> #
 
-# <-------------------------------------------------------------------------------------------> #
 
