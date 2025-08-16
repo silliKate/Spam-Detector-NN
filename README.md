@@ -38,7 +38,8 @@ Spam messages, whether in emails or SMS, are a common nuisance and can sometimes
    ```
    
    The script preprocesses the data in spam.csv for training. You can adjust the hyperparameters as needed for experimentation purposes.
-   Note: Running this script will overwrite the existing `model_params.npz`; the original version is available in the `backup/` folder.
+   > Note: Running this script will overwrite the existing `model_params.npz`, the original version is available in the `backup/` folder.
+   
    Additionally, the script includes utility functions to monitor the model’s performance, such as tracking various learning rates vs cost during training.
    
 ## Learning Rate Analysis
