@@ -1,7 +1,6 @@
 import pandas as pd
 import numpy as np
 import re
-import copy
 import matplotlib.pyplot as plt
 from sklearn.feature_extraction.text import TfidfVectorizer
 from sklearn.metrics import roc_curve, auc
@@ -191,7 +190,7 @@ def backward_propagation(AL, Y, caches):
 def update_parameters(params, grads, learning_rate):
     # updates parameters using gradient descent
     
-    parameters = copy.deepcopy(params)
+    parameters = np.array(params, copy=True)
     L = len(parameters) // 2 # '// 2' since we have both W and b
 
     for l in range(L):
@@ -330,5 +329,6 @@ def plot_roc_curve(X, Y):
 
 # plot_roc_curve(X_train, Y_train)
 # <--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------> #
+
 
 
