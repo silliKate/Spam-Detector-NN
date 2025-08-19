@@ -5,6 +5,7 @@ A deep neural network designed to classify emails and SMS messages as spam (1) o
 Spam messages, whether in emails or SMS, are a common nuisance and can sometimes pose security risks. Detecting spam automatically is crucial to improve communication efficiency and protect users from potential threats. This project implements a deep neural network for spam detection, using ReLU activation in hidden layers and a sigmoid function in the output layer for binary classification. Text data is processed using TF-IDF vectorization into numerical values, for effective learning.
 
 ## How to Run?
+Pre-requisites: python
 1. Clone the repository using
 
    ```
